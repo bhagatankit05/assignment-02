@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ 
+ <title>Membership Survey</title>
+
+</head>
+
+<body>
+  
+<h1>Membership Survey</h1>
+
+
+  <form action="submit_form.php" method="POST">
+   
+ <label for="name">Name:</label>
+   
+ <input type="text" id="name" name="name" required><br><br>
+
+   
+ <label for="age">Age:</label>
+   
+ <input type="number" id="age" name="age" required><br><br>
+
+  
+  <label for="gender">Gender:</label>
+   
+ <input type="radio" id="male" name="gender" value="Male" required>
+   
+ <label for="male">Male</label>
+   
+ <input type="radio" id="female" name="gender" value="Female" required>
+  
+  <label for="female">Female</label><br><br>
+
+  
+  <label for="email">Email:</label>
+   
+ <input type="email" id="email" name="email" required><br><br>
+
+  
+  <label for="phone">Phone:</label>
+    
+<input type="tel" id="phone" name="phone" required><br><br>
+
+ 
+   <label for="address">Address:</label><br>
+ 
+   <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+   
+ <label for="membershipType">Membership Type:</label>
+  
+  <select id="membershipType" name="membershipType" required>
+   
+   <option value="">-- Select Membership Type --</option>
+      
+<option value="Basic">Basic</option>
+   
+   <option value="Premium">Premium</option>
+  
+    <option value="VIP">VIP</option>
+   
+</select><br><br>
+
+   
+ <label for="interests">Interests:</label><br>
+   
+ <input type="checkbox" id="sports" name="interests[]" value="Sports">
+   
+ <label for="sports">Sports</label>
+   
+ <input type="checkbox" id="music" name="interests[]" value="Music">
+  
+  <label for="music">Music</label>
+   
+ <input type="checkbox" id="art" name="interests[]" value="Art">
+  
+  <label for="art">Art</label><br><br>
+
+   
+ <input type="submit" value="Submit">
+ 
+ </form>
+
+</body>
+
+</html>
